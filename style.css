@@ -1,0 +1,116 @@
+/* Resetting some default browser styles */
+body, h1, p, ul, ol, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Background light grey */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container style */
+form {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
+}
+
+/* Form elements style */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #ff69b4; /* Pink border on focus */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 20px; /* Menambahkan margin bawah untuk ruang antara gender dan email */
+}
+
+label[for="email"] {
+    margin-top: 20px; /* Memberikan jarak tambahan di atas label email */
+}
+
+label[for="komentar"] {
+    margin-bottom: 8px; /* Menambahkan margin bawah untuk jarak yang konsisten */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #ff69b4; /* Pink background */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff5ca3; /* Darker pink on hover */
+    transform: translateY(-2px);
+}
+
+/* Form hover effect */
+form:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* H1 style for the title */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ff69b4; /* Pink color for the title */
+    margin-bottom: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
