@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Register</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="proses.php" method="post">
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" autocomplete="off"> <br>
+            <label for="NIM">NIM</label>
+            <input type="number" name="NIM" autocomplete="off"> <br>
+            <label for="kelas">Kelas</label>
+            <input type="text" name="kelas" autocomplete="off"> <br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="Pria">Pria
+            <input type="radio" name="gender" value="Wanita">Wanita <br>
+            <label for="email">Email</label>
+            <input type="text" name="email" autocomplete="off"> <br>
+            <label for="komentar">Komentar</label> <br>
+            <textarea name="komentar" rows="8" cols="80"></textarea> <br>
+            <button type="submit" name="submit" value="<?php echo date('h:i:sa'); ?>">Submit</button>
+        </form>
+    </body>
+</html>
+
