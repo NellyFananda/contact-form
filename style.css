@@ -25,6 +25,15 @@ form {
     border: 1px solid #e1e1e1;
 }
 
+/* Header style */
+p.welcome {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff69b4; /* Pink color for the welcome message */
+    margin-bottom: 20px; /* Space below the welcome message */
+}
+
 /* Form elements style */
 label {
     font-weight: bold;
